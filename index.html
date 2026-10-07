@@ -1,0 +1,3283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For My Queen, Tuntuni ❤️</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%23e11d48' d='M50 88 13 51C-7 31 7 4 31 4c9 0 16 5 19 12C54 9 61 4 70 4c24 0 38 27 18 47L50 88Z'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+
+/* =====================================================
+   RESET
+===================================================== */
+
+@font-face {
+    font-family: "FN Mamun Turio";
+    src: url("./fonts/FN Mamun Turio Unicode Thin.ttf") format("truetype");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "FN Mamun Turio";
+    src: url("./fonts/FN Mamun Turio Unicode Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "FN Mamun Turio";
+    src: url("./fonts/FN Mamun Turio Unicode.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "FN Mamun Turio";
+    src: url("./fonts/FN Mamun Turio Unicode Semi-bold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "FN Mamun Turio";
+    src: url("./fonts/FN Mamun Turio Unicode Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "FN Mamun Turio";
+    src: url("./fonts/FN Mamun Turio Unicode Thin Italic.ttf") format("truetype");
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "FN Mamun Turio";
+    src: url("./fonts/FN Mamun Turio Unicode Light Italic.ttf") format("truetype");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "FN Mamun Turio";
+    src: url("./fonts/FN Mamun Turio Unicode Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "FN Mamun Turio";
+    src: url("./fonts/FN Mamun Turio Unicode Semi-bold Italic.ttf") format("truetype");
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "FN Mamun Turio";
+    src: url("./fonts/FN Mamun Turio Unicode Bold Italic.ttf") format("truetype");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Love Font";
+    src: url("./fonts/FN Mashbik Smrticharon.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Love Font";
+    src: url("./fonts/FN Mashbik Smrticharon Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fff5f8;
+    color: #633b4b;
+    font-family: "Cormorant Garamond", "FN Mamun Turio", serif;
+    overflow-x: hidden;
+}
+
+button,
+input {
+    font-family: inherit;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Love Font", "FN Mamun Turio", sans-serif;
+}
+
+.bengali {
+    font-family: "FN Mamun Turio", sans-serif;
+}
+
+.love-font {
+    font-family: "Love Font", "FN Mamun Turio", sans-serif;
+}
+
+
+/* =====================================================
+   LOCK SCREEN
+===================================================== */
+
+#lockScreen {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #fffafd 0%,
+            #ffe3ed 45%,
+            #e99ab7 100%
+        );
+
+    transition:
+        opacity 1.2s ease,
+        visibility 1.2s ease;
+}
+
+#lockScreen.unlocked {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.lock-container {
+    text-align: center;
+    padding: 25px;
+    animation: lockAppear 1.2s ease;
+}
+
+
+/* LOCK */
+
+.lock {
+    position: relative;
+    width: 105px;
+    height: 120px;
+    margin: auto;
+}
+
+.lock-shackle {
+    position: absolute;
+
+    width: 58px;
+    height: 62px;
+
+    left: 23px;
+    top: 0;
+
+    border: 10px solid #963e64;
+    border-bottom: 0;
+
+    border-radius: 35px 35px 0 0;
+}
+
+.lock-body {
+    position: absolute;
+
+    width: 82px;
+    height: 68px;
+
+    left: 11px;
+    bottom: 0;
+
+    border-radius: 15px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ce6d92,
+            #963e64
+        );
+
+    box-shadow:
+        0 15px 35px rgba(120,40,75,.3);
+}
+
+.keyhole {
+    position: absolute;
+
+    width: 15px;
+    height: 15px;
+
+    top: 17px;
+    left: 33px;
+
+    border-radius: 50%;
+    background: #ffeaf1;
+}
+
+.keyhole::after {
+    content: "";
+
+    position: absolute;
+
+    width: 8px;
+    height: 18px;
+
+    top: 10px;
+    left: 4px;
+
+    background: #ffeaf1;
+}
+
+
+/* LOCK TEXT */
+
+.lock-title {
+    font-family: "Love Font", "FN Mamun Turio", sans-serif;
+
+    font-size: 65px;
+
+    color: #963e64;
+
+    margin-top: 20px;
+}
+
+.lock-subtitle {
+    font-family: "Montserrat", "FN Mamun Turio", sans-serif;
+
+    font-size: 14px;
+
+    /* letter-spacing: 2px; */
+    text-transform: uppercase;
+
+    opacity: .80;
+
+    margin: 5px 0 30px;
+}
+
+
+/* CODE */
+
+.code-input {
+    width: 230px;
+
+    padding: 15px;
+
+    border: 1px solid #d99ab1;
+
+    border-radius: 40px;
+
+    outline: none;
+
+    text-align: center;
+
+    font-family: "Montserrat", "FN Mamun Turio", sans-serif;
+
+    font-size: 20px;
+
+    letter-spacing: 7px;
+
+    color: #71394f;
+
+    background: rgba(255,255,255,.9);
+}
+
+.code-input:focus {
+    box-shadow:
+        0 0 25px rgba(190,80,120,.2);
+}
+
+.unlock-button {
+    display: block;
+
+    margin: 15px auto;
+
+    padding: 14px 32px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #a74369,
+            #df789f
+        );
+
+    color: white;
+
+    font-family: "Montserrat", "FN Mamun Turio", sans-serif;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.unlock-button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 28px rgba(150,50,90,.3);
+}
+
+.countdown {
+    margin-top: 24px;
+    font-family: "Montserrat", "FN Mamun Turio", sans-serif;
+    color: #71394f;
+}
+
+.countdown-label {
+    margin-bottom: 10px;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    opacity: .75;
+}
+
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.countdown-unit {
+    min-width: 48px;
+}
+
+.countdown-value {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.countdown-unit-label {
+    display: block;
+    margin-top: 3px;
+    font-size: 9px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    opacity: .7;
+}
+
+#error {
+    min-height: 20px;
+
+    font-family: "Montserrat", "FN Mamun Turio", sans-serif;
+
+    font-size: 12px;
+
+    color: #a92f5a;
+}
+
+
+/* =====================================================
+   MUSIC BUTTON
+===================================================== */
+
+.music-control {
+    position: fixed;
+
+    right: 20px;
+    bottom: 20px;
+
+    width: 52px;
+    height: 52px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(150,62,100,.9);
+
+    color: white;
+
+    font-size: 21px;
+
+    cursor: pointer;
+
+    z-index: 5000;
+
+    box-shadow:
+        0 8px 25px rgba(80,20,50,.25);
+
+    transition: .3s;
+}
+
+.music-control:hover {
+    transform: scale(1.1);
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px 20px;
+
+    position: relative;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #fffafd 0%,
+            #ffe4ed 40%,
+            #f1aec6 100%
+        );
+
+    overflow: hidden;
+}
+
+.hero-small {
+    font-family: "Montserrat", "FN Mamun Turio", sans-serif;
+
+    font-size: 18px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    opacity: .65;
+}
+
+.hero h1 {
+    font-family: "Love Font", "FN Mamun Turio", sans-serif;
+
+    font-size: clamp(50px, 9vw, 100px);
+    margin-top: 12px;
+
+    color: #963e64;
+
+    text-shadow:
+        0 8px 25px rgba(150,62,100,.15);
+
+    animation:
+        floating 4s ease-in-out infinite;
+}
+
+.hero p {
+    font-size: 22px;
+}
+
+
+/* =====================================================
+   FLOWER CIRCLE
+===================================================== */
+
+.flower-circle {
+    width: 410px;
+    height: 410px;
+
+    max-width: 90vw;
+    max-height: 90vw;
+
+    position: relative;
+
+    margin: 5px 0 20px;
+}
+
+.flower {
+    position: absolute;
+
+    width: 65px;
+    height: 65px;
+
+    top: 50%;
+    left: 50%;
+
+    transform:
+        translate(-50%,-50%)
+        rotate(var(--angle))
+        translateY(-155px);
+
+    animation:
+        orbit 22s linear infinite;
+}
+
+.flower-inner {
+    width: 100%;
+    height: 100%;
+
+    animation:
+        reverseOrbit 22s linear infinite;
+}
+
+.petal {
+    position: absolute;
+
+    width: 28px;
+    height: 42px;
+
+    top: 2px;
+    left: 18px;
+
+    border-radius:
+        50% 50% 45% 45%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff,
+            #f39bbb
+        );
+
+    transform-origin: 50% 100%;
+
+    box-shadow:
+        0 0 12px rgba(255,160,190,.35);
+}
+
+.petal:nth-child(1) {
+    transform: rotate(0deg);
+}
+
+.petal:nth-child(2) {
+    transform: rotate(72deg);
+}
+
+.petal:nth-child(3) {
+    transform: rotate(144deg);
+}
+
+.petal:nth-child(4) {
+    transform: rotate(216deg);
+}
+
+.petal:nth-child(5) {
+    transform: rotate(288deg);
+}
+
+.flower-center {
+    position: absolute;
+
+    width: 20px;
+    height: 20px;
+
+    top: 23px;
+    left: 23px;
+
+    border-radius: 50%;
+
+    background: #f2bd63;
+
+    box-shadow:
+        0 0 18px #ffd98a;
+}
+
+.center-heart {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform:
+        translate(-50%,-50%);
+
+    font-size: 68px;
+
+    filter:
+        drop-shadow(
+            0 8px 15px
+            rgba(180,50,90,.2)
+        );
+
+    animation:
+        heartbeat 1.8s infinite;
+}
+
+
+/* =====================================================
+   SECTIONS
+===================================================== */
+
+section {
+    padding: 100px 20px;
+}
+
+.section-label {
+    text-align: center;
+
+    font-family: "Montserrat", "FN Mamun Turio", sans-serif;
+
+    font-size: 20px;
+
+   
+    text-transform: uppercase;
+
+    opacity: .70;
+}
+.section-label-bn {
+    text-align: center;
+
+    font-family: "FN Mamun Turio", sans-serif;
+
+    font-size: 20px;
+
+   
+    text-transform: uppercase;
+
+    opacity: .70;
+}
+.section-title {
+    text-align: center;
+
+    font-family: "Love Font", "FN Mamun Turio", sans-serif;
+
+    font-size: 68px;
+
+    color: #963e64;
+
+    margin-bottom: 45px;
+}
+
+.section-title.love-font {
+    font-family: "Love Font", "FN Mamun Turio", sans-serif;
+}
+
+
+/* =====================================================
+   STORY
+===================================================== */
+
+.story {
+    max-width: 720px;
+
+    margin: auto;
+
+    text-align: center;
+
+    font-size: 22px;
+
+    line-height: 1.85;
+}
+
+.story-date {
+    font-family: "Montserrat", "FN Mamun Turio", sans-serif;
+
+    font-size: 18px;
+
+    letter-spacing: 3px;
+
+    color: #a8466c;
+
+    margin-bottom: 15px;
+}
+
+.story-heart {
+    font-size: 35px;
+
+    margin: 20px 0;
+}
+
+
+/* =====================================================
+   MEMORIES
+===================================================== */
+
+.memories {
+    background:
+        linear-gradient(
+            180deg,
+            #fff,
+            #fff5f8
+        );
+}
+
+.memory-intro {
+    max-width: 650px;
+
+    margin:
+        -25px auto 40px;
+
+    text-align: center;
+
+    font-size: 20px;
+}
+
+
+/* =====================================================
+   PHOTO SLIDER
+===================================================== */
+
+.slider {
+    position: relative;
+
+    width: 100%;
+    max-width: 900px;
+
+    margin: auto;
+
+    overflow: hidden;
+
+    border-radius: 25px;
+
+    padding: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffe9f0,
+            #fff
+        );
+
+    box-shadow:
+        0 25px 70px
+        rgba(100,40,60,.15);
+}
+
+.slides {
+    display: flex;
+
+    width: 100%;
+
+    transition:
+        transform .8s
+        cubic-bezier(.77,0,.18,1);
+}
+
+.slide {
+    min-width: 100%;
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px 40px;
+}
+
+
+/* =====================================================
+   PHOTO
+===================================================== */
+
+.single-photo {
+    width: min(650px, 85vw);
+
+    padding:
+        15px 15px 25px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 20px 50px
+        rgba(100,40,60,.18);
+
+    border-radius: 5px;
+
+    overflow: hidden;
+
+    transform: rotate(-1.5deg);
+
+    transition: .5s;
+}
+
+.slide:nth-child(even)
+.single-photo {
+    transform: rotate(1.5deg);
+}
+
+.single-photo:hover {
+    transform:
+        rotate(0deg)
+        scale(1.015);
+}
+
+
+/* THIS IS THE IMPORTANT PHOTO PART */
+
+.single-photo img {
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    max-width: 100%;
+
+    max-height: 650px;
+
+    object-fit: contain;
+
+    margin: 0 auto;
+
+    background: #f8e8ee;
+}
+
+
+/* IF IMAGE FAILS */
+
+.photo-error {
+    display: none;
+
+    padding: 50px 20px;
+
+    text-align: center;
+
+    font-family: "Montserrat", "FN Mamun Turio", sans-serif;
+
+    color: #963e64;
+
+    font-size: 14px;
+}
+
+.memory-caption {
+    text-align: center;
+
+    font-family: "Great Vibes", "FN Mamun Turio", cursive;
+
+    font-size: 30px;
+
+    color: #963e64;
+
+    padding-top: 15px;
+}
+
+
+/* =====================================================
+   SLIDER BUTTONS
+===================================================== */
+
+.slider-button {
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 48px;
+    height: 48px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255,255,255,.95);
+
+    color: #963e64;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    z-index: 10;
+
+    box-shadow:
+        0 5px 20px
+        rgba(100,30,60,.12);
+
+    transition: .3s;
+}
+
+.slider-button:hover {
+    transform:
+        translateY(-50%)
+        scale(1.1);
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+
+/* DOTS */
+
+.dots {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+.dot {
+    width: 9px;
+    height: 9px;
+
+    border-radius: 50%;
+
+    background: #dba5b9;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.dot.active {
+    background: #963e64;
+
+    transform: scale(1.5);
+}
+
+
+/* =====================================================
+   LOVE LETTER
+===================================================== */
+
+.letter-section {
+    background:
+        linear-gradient(
+            135deg,
+            #fff5f8,
+            #fbd8e5
+        );
+}
+
+.letter {
+    max-width: 760px;
+
+    margin: auto;
+
+    padding: 60px;
+
+    position: relative;
+
+    background:
+        rgba(255,255,255,.9);
+
+    box-shadow:
+        0 25px 65px
+        rgba(100,30,60,.12);
+
+    border-radius: 5px;
+}
+
+.letter::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 15px;
+
+    border:
+        1px solid
+        rgba(170,70,100,.2);
+
+    pointer-events: none;
+}
+
+.letter h3 {
+    text-align: center;
+
+    font-family: "Love Font", "FN Mamun Turio", sans-serif;
+
+    font-size: 38px;
+
+    color: #963e64;
+
+    margin-bottom: 30px;
+}
+
+.letter p {
+    font-size: 20px;
+
+    line-height: 1.9;
+
+    margin-bottom: 18px;
+}
+
+.letter-opening {
+    font-family:
+        "Great Vibes",
+        "FN Mamun Turio",
+        cursive;
+
+    font-size:
+        25px !important;
+
+    color: #963e64;
+}
+
+.signature {
+    text-align: right;
+
+    font-family:
+        "Great Vibes",
+        "FN Mamun Turio",
+        cursive;
+
+    font-size:
+        44px !important;
+
+    color: #963e64;
+
+    margin-top: 30px;
+}
+
+
+/* =====================================================
+   SPOTIFY
+===================================================== */
+
+.playlist {
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle,
+            #fff,
+            #ffe5ee
+        );
+}
+
+.playlist-intro {
+    max-width: 650px;
+
+    margin:
+        -20px auto 30px;
+
+    font-size: 21px;
+
+    line-height: 1.7;
+}
+
+.spotify {
+    max-width: 700px;
+
+    margin: auto;
+}
+
+.spotify iframe {
+    width: 100%;
+
+    height: 352px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 15px 40px
+        rgba(50,20,35,.15);
+}
+
+.playlist-note {
+    margin-top: 20px;
+
+    font-size: 16px;
+
+    opacity: .7;
+}
+
+
+/* =====================================================
+   FINAL
+===================================================== */
+
+.final {
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 80px 25px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #fff0f5,
+            #e9a2ba
+        );
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.final-heart {
+    font-size: 75px;
+
+    animation:
+        heartbeatFinal 1.5s infinite;
+}
+
+.final h2 {
+    font-family:
+        "Love Font",
+        "FN Mamun Turio",
+        sans-serif;
+
+    font-size:
+        clamp(38px, 6vw, 72px);
+
+    color: #963e64;
+
+    margin: 10px 0;
+}
+
+.infinity {
+    font-size: 75px;
+
+    color: #963e64;
+
+    margin: 5px 0 20px;
+
+    animation:
+        infinityGlow 3s
+        ease-in-out infinite;
+}
+
+.final-message {
+    max-width: 720px;
+
+    font-size: 24px;
+
+    line-height: 1.8;
+}
+
+.final-signature {
+    font-family:
+        "Great Vibes",
+        "FN Mamun Turio",
+        cursive;
+
+    font-size: 46px;
+
+    color: #963e64;
+
+    margin-top: 30px;
+}
+
+.final-date {
+    margin-top: 30px;
+
+    font-family:
+        "Montserrat",
+        "FN Mamun Turio",
+        sans-serif;
+
+    font-size: 15px;
+
+    letter-spacing: 4px;
+
+    opacity: .80;
+}
+
+
+/* =====================================================
+   FLOATING HEARTS
+===================================================== */
+
+.heart {
+    position: fixed;
+
+    bottom: -40px;
+
+    pointer-events: none;
+
+    z-index: 1000;
+
+    animation:
+        rise linear forwards;
+}
+
+
+/* =====================================================
+   ANIMATIONS
+===================================================== */
+
+@keyframes lockAppear {
+    from {
+        opacity: 0;
+        transform:
+            translateY(30px)
+            scale(.95);
+    }
+
+    to {
+        opacity: 1;
+        transform:
+            translateY(0)
+            scale(1);
+    }
+}
+
+@keyframes orbit {
+    from {
+        transform:
+            translate(-50%,-50%)
+            rotate(var(--angle))
+            translateY(-155px);
+    }
+
+    to {
+        transform:
+            translate(-50%,-50%)
+            rotate(
+                calc(var(--angle) + 360deg)
+            )
+            translateY(-155px);
+    }
+}
+
+@keyframes reverseOrbit {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes heartbeat {
+    0%,100% {
+        transform:
+            translate(-50%,-50%)
+            scale(1);
+    }
+
+    50% {
+        transform:
+            translate(-50%,-50%)
+            scale(1.18);
+    }
+}
+
+@keyframes heartbeatFinal {
+    0%,100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes floating {
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes infinityGlow {
+    0%,100% {
+        opacity: .65;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.08);
+    }
+}
+
+@keyframes rise {
+    from {
+        transform:
+            translateY(0)
+            rotate(0deg);
+
+        opacity: 0;
+    }
+
+    10% {
+        opacity: .8;
+    }
+
+    to {
+        transform:
+            translateY(-110vh)
+            rotate(30deg);
+
+        opacity: 0;
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:600px) {
+
+    .lock-title {
+        font-size: 55px;
+    }
+
+    .hero h1 {
+        font-size: 54px;
+    }
+
+    .hero p {
+        font-size: 19px;
+    }
+
+    .flower-circle {
+        width: 330px;
+        height: 330px;
+    }
+
+    .flower {
+        transform:
+            translate(-50%,-50%)
+            rotate(var(--angle))
+            translateY(-120px);
+    }
+
+    .section-title {
+        font-size: 53px;
+    }
+
+    section {
+        padding: 80px 15px;
+    }
+
+    .story {
+        font-size: 19px;
+    }
+
+    .slider {
+        padding: 10px;
+    }
+
+    .slide {
+        padding:
+            20px 35px;
+    }
+
+    .single-photo {
+        width: 82vw;
+
+        padding:
+            10px 10px 18px;
+    }
+
+    .single-photo img {
+        max-height: 500px;
+    }
+
+    .memory-caption {
+        font-size: 24px;
+    }
+
+    .slider-button {
+        width: 40px;
+        height: 40px;
+
+        font-size: 23px;
+    }
+
+    .prev {
+        left: 8px;
+    }
+
+    .next {
+        right: 8px;
+    }
+
+    .letter {
+        padding:
+            45px 25px;
+    }
+
+    .letter h3 {
+        font-size: 32px;
+    }
+
+    .letter p {
+        font-size: 18px;
+    }
+
+    .signature {
+        font-size:
+            38px !important;
+    }
+
+    .playlist-intro {
+        font-size: 19px;
+    }
+
+    .final-message {
+        font-size: 20px;
+    }
+
+    .final-signature {
+        font-size: 40px;
+    }
+
+    .music-control {
+        width: 46px;
+        height: 46px;
+
+        right: 15px;
+        bottom: 15px;
+    }
+}
+
+/* =====================================================
+   LIVE COUNTER SECTION
+===================================================== */
+
+.counter-section {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,235,243,0.6) 50%, rgba(255,255,255,0) 100%);
+}
+
+.counter-subtitle {
+    font-size: 20px;
+    color: #854a62;
+    margin-top: -25px;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+.love-counter-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.counter-card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(233, 154, 183, 0.4);
+    box-shadow: 0 15px 35px rgba(150, 62, 100, 0.12), inset 0 0 15px rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    padding: 22px 25px;
+    min-width: 120px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.counter-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 45px rgba(150, 62, 100, 0.2);
+}
+
+.counter-num {
+    font-family: "Montserrat", "FN Mamun Turio", sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    color: #963e64;
+    line-height: 1.1;
+    letter-spacing: 1px;
+}
+
+.counter-label {
+    font-family: "Montserrat", "FN Mamun Turio", sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #a8466c;
+    margin-top: 8px;
+    opacity: 0.85;
+}
+
+.counter-sep {
+    font-size: 20px;
+    animation: pulseHeart 1.5s ease-in-out infinite;
+    user-select: none;
+}
+
+@keyframes pulseHeart {
+    0%, 100% { transform: scale(1); opacity: 0.7; }
+    50% { transform: scale(1.3); opacity: 1; filter: drop-shadow(0 0 8px rgba(206,109,146,0.6)); }
+}
+
+.counter-footer {
+    margin-top: 35px;
+    font-size: 22px;
+    color: #7a4258;
+    font-family: "Cormorant Garamond", "FN Mamun Turio", serif;
+    font-style: italic;
+}
+
+/* =====================================================
+   LOVE NOTES JAR
+===================================================== */
+
+.jar-section {
+    text-align: center;
+    padding: 90px 20px;
+    position: relative;
+}
+
+.jar-subtitle {
+    font-size: 21px;
+    color: #854a62;
+    margin-top: -25px;
+    margin-bottom: 45px;
+}
+
+.jar-container {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.jar-body {
+    position: relative;
+    width: 220px;
+    height: 290px;
+    margin: 0 auto;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.jar-container:hover .jar-body {
+    transform: scale(1.05) rotate(-2deg);
+}
+
+.jar-container:active .jar-body, .jar-shaking .jar-body {
+    animation: jarWiggle 0.6s ease;
+}
+
+@keyframes jarWiggle {
+    0%, 100% { transform: scale(1.05) rotate(0deg); }
+    20% { transform: scale(1.08) rotate(-6deg); }
+    40% { transform: scale(1.08) rotate(6deg); }
+    60% { transform: scale(1.08) rotate(-4deg); }
+    80% { transform: scale(1.08) rotate(4deg); }
+}
+
+.jar-lid {
+    position: relative;
+    z-index: 3;
+}
+
+.jar-cork {
+    width: 90px;
+    height: 26px;
+    background: linear-gradient(180deg, #d4a373 0%, #b87333 100%);
+    border-radius: 6px 6px 3px 3px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15), inset 0 2px 4px rgba(255,255,255,0.4);
+    border: 1px solid #9e5b22;
+}
+
+.jar-rim {
+    width: 130px;
+    height: 16px;
+    background: linear-gradient(90deg, rgba(255,255,255,0.8), rgba(230,200,215,0.9), rgba(255,255,255,0.8));
+    border-radius: 10px;
+    margin: -3px auto 0;
+    box-shadow: 0 5px 12px rgba(150,62,100,0.2);
+    border: 1px solid rgba(255,255,255,0.9);
+}
+
+.jar-glass {
+    position: relative;
+    width: 200px;
+    height: 240px;
+    margin: -4px auto 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.65) 0%, rgba(255,240,246,0.4) 50%, rgba(255,215,230,0.55) 100%);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 20px 20px 45px 45px;
+    border: 3px solid rgba(255,255,255,0.85);
+    box-shadow: 0 20px 50px rgba(150,62,100,0.22), inset 0 0 25px rgba(255,255,255,0.7);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jar-glare {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 25px;
+    height: 180px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 100%);
+    border-radius: 15px;
+    transform: rotate(3deg);
+    pointer-events: none;
+}
+
+.jar-hearts-inside {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.jar-floating-item {
+    position: absolute;
+    font-size: 24px;
+    bottom: 25px;
+    animation: floatNote 3.5s ease-in-out infinite;
+    animation-delay: var(--delay);
+}
+
+.jar-floating-item:nth-child(1) { left: 30px; }
+.jar-floating-item:nth-child(2) { left: 80px; }
+.jar-floating-item:nth-child(3) { left: 135px; }
+.jar-floating-item:nth-child(4) { left: 55px; }
+.jar-floating-item:nth-child(5) { left: 110px; }
+.jar-floating-item:nth-child(6) { left: 150px; }
+
+@keyframes floatNote {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-30px) rotate(15deg); }
+}
+
+.jar-label-tag {
+    position: relative;
+    z-index: 2;
+    background: #fffdfa;
+    border: 1px dashed #ce6d92;
+    padding: 10px 18px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(100,40,60,0.15);
+    transform: rotate(-3deg);
+    font-family: "Great Vibes", "FN Mamun Turio", cursive;
+    font-size: 28px;
+    color: #963e64;
+    line-height: 1;
+}
+
+.jar-label-tag small {
+    display: block;
+    font-family: "Montserrat", "FN Mamun Turio", sans-serif;
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #b3577d;
+    margin-top: 4px;
+}
+
+.jar-btn {
+    margin-top: 30px;
+    background: linear-gradient(135deg, #ce6d92, #963e64);
+    color: #fff;
+    border: none;
+    padding: 15px 36px;
+    font-family: "Montserrat", "FN Mamun Turio", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    box-shadow: 0 12px 30px rgba(150,62,100,0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.jar-btn:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 16px 36px rgba(150,62,100,0.4);
+    background: linear-gradient(135deg, #d8779c, #a8466c);
+}
+
+.jar-counter-badge {
+    margin-top: 15px;
+    font-family: "Montserrat", "FN Mamun Turio", sans-serif;
+    font-size: 20px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    color: #a8466c;
+    opacity: 0.8;
+}
+
+/* =====================================================
+   LOVE NOTE MODAL
+===================================================== */
+
+.note-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 100000;
+    background: rgba(45, 20, 30, 0.65);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.note-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.note-paper {
+    background: #fffaf7;
+    background-image: radial-gradient(#f0d2dc 1px, transparent 1px);
+    background-size: 20px 20px;
+    border: 2px solid #e9b3c4;
+    border-radius: 20px;
+    padding: 45px 35px 35px;
+    max-width: 520px;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 25px 70px rgba(70, 20, 40, 0.4), 0 0 0 10px rgba(255,255,255,0.7);
+    transform: scale(0.85) translateY(20px);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-align: center;
+}
+
+.note-modal.active .note-paper {
+    transform: scale(1) translateY(0);
+}
+
+.note-stamp {
+    position: absolute;
+    top: -18px;
+    right: 25px;
+    background: #ce6d92;
+    color: #fff;
+    font-family: "Montserrat", "FN Mamun Turio", sans-serif;
+    font-size: 15px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(206, 109, 146, 0.4);
+}
+
+.note-number {
+    font-family: "Montserrat", "FN Mamun Turio", sans-serif;
+    font-size: 15px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    color: #a8466c;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.note-content {
+    font-family: "Cormorant Garamond", "FN Mamun Turio", serif;
+    font-size: 26px;
+    line-height: 1.6;
+    color: #592e40;
+    font-style: italic;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+}
+
+.note-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.note-btn-another {
+    background: linear-gradient(135deg, #ce6d92, #963e64);
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-family: "Montserrat", "FN Mamun Turio", sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(150,62,100,0.25);
+    transition: all 0.25s ease;
+}
+
+.note-btn-another:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(150,62,100,0.35);
+}
+
+.note-btn-close {
+    background: transparent;
+    border: 1px solid #ce6d92;
+    color: #963e64;
+    padding: 12px 24px;
+    font-family: "Montserrat", "FN Mamun Turio", sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.note-btn-close:hover {
+    background: rgba(206,109,146,0.1);
+}
+
+@media (max-width: 600px) {
+    .counter-card {
+        min-width: 70px;
+        padding: 14px 10px;
+    }
+    .counter-num {
+        font-size: 26px;
+    }
+    .counter-label {
+        font-size: 9px;
+        letter-spacing: 1.5px;
+    }
+    .counter-sep {
+        font-size: 14px;
+    }
+    .jar-body {
+        width: 180px;
+        height: 250px;
+    }
+    .jar-glass {
+        width: 170px;
+        height: 200px;
+    }
+    .note-content {
+        font-size: 22px;
+    }
+}
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     MUSIC
+===================================================== -->
+
+<audio id="backgroundMusic" loop preload="auto">
+    <source
+        src="Amar Bhindeshi Tara.mp3"
+        type="audio/mpeg">
+</audio>
+
+<audio id="photoMusic" loop preload="none"></audio>
+
+<button
+    id="musicButton"
+    class="music-control"
+    onclick="toggleMusic()"
+    aria-label="Toggle music">
+
+    🎵
+
+</button>
+
+
+<!-- =====================================================
+     LOCK SCREEN
+===================================================== -->
+
+<div id="lockScreen">
+
+    <div class="lock-container">
+
+        <div class="lock">
+
+            <div class="lock-shackle"></div>
+
+            <div class="lock-body">
+                <div class="keyhole"></div>
+            </div>
+
+        </div>
+
+        <h1 class="lock-title">
+            <span class="bengali love-font" lang="bn">আমার রাণী</span> Moon- <span class="bengali love-font" lang="bn">এর জন্য</span> 👑❤️
+        </h1>
+
+        <div class="lock-subtitle">
+            ❤️ <span class="bengali" lang="bn">তোমার ভালোবাসার মানুষের কাছ থেকে ছোট্ট একটি গোপন উপহার</span> ❤️
+        </div>
+
+        <input
+            id="code"
+            class="code-input"
+            type="password"
+            inputmode="numeric"
+            maxlength="8"
+            placeholder="••••••••"
+            autocomplete="off">
+
+        <button
+            class="unlock-button"
+            onclick="unlock()">
+
+            🔐 <span class="bengali" lang="bn">আমার মনের ভেতরটা দেখো</span> ❤️
+
+        </button>
+
+        <div class="countdown" aria-live="polite">
+            <div class="countdown-label">Opens automatically in</div>
+            <div class="countdown-timer">
+                <div class="countdown-unit">
+                    <span class="countdown-value" id="countdownDays">--</span>
+                    <span class="countdown-unit-label">Days</span>
+                </div>
+                <div class="countdown-unit">
+                    <span class="countdown-value" id="countdownHours">--</span>
+                    <span class="countdown-unit-label">Hours</span>
+                </div>
+                <div class="countdown-unit">
+                    <span class="countdown-value" id="countdownMinutes">--</span>
+                    <span class="countdown-unit-label">Minutes</span>
+                </div>
+                <div class="countdown-unit">
+                    <span class="countdown-value" id="countdownSeconds">--</span>
+                    <span class="countdown-unit-label">Seconds</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="error"></div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<header class="hero">
+
+    
+    <h1>
+        <span class="bengali love-font" lang="bn">আমার রাণী,</span> Tuntuni
+    </h1>
+<div class="hero-small">
+        <span class="bengali" lang="bn">তোমার জন্য বানানো ছোট্ট এক পৃথিবী</span> 🌍
+    </div>
+
+    <div class="flower-circle">
+
+
+        <div class="flower" style="--angle:0deg">
+            <div class="flower-inner">
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="flower-center"></div>
+            </div>
+        </div>
+
+
+        <div class="flower" style="--angle:45deg">
+            <div class="flower-inner">
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="flower-center"></div>
+            </div>
+        </div>
+
+
+        <div class="flower" style="--angle:90deg">
+            <div class="flower-inner">
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="flower-center"></div>
+            </div>
+        </div>
+
+
+        <div class="flower" style="--angle:135deg">
+            <div class="flower-inner">
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="flower-center"></div>
+            </div>
+        </div>
+
+
+        <div class="flower" style="--angle:180deg">
+            <div class="flower-inner">
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="flower-center"></div>
+            </div>
+        </div>
+
+
+        <div class="flower" style="--angle:225deg">
+            <div class="flower-inner">
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="flower-center"></div>
+            </div>
+        </div>
+
+
+        <div class="flower" style="--angle:270deg">
+            <div class="flower-inner">
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="flower-center"></div>
+            </div>
+        </div>
+
+
+        <div class="flower" style="--angle:315deg">
+            <div class="flower-inner">
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="flower-center"></div>
+            </div>
+        </div>
+
+
+        <div class="center-heart">
+            ❤️
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     STORY
+===================================================== -->
+
+<section>
+
+    <div class="section-label">
+        
+    </div>
+
+    <h2 class="section-title love-font" lang="bn">
+      আমাদের ভালোবাসার গল্প
+    </h2>
+
+    <div class="story">
+
+        <div class="story-date">
+            DECEMBER 15 · 2019
+        </div>
+
+        <p>
+            যেদিন শুরু হয়েছিল আমাদের ছোট্ট গল্পটা
+        </p>
+
+        <div class="story-heart">
+            ❤️
+        </div>
+
+        <p>
+            কোটি কোটি মানুষের এই পৃথিবীতে, একই আকাশের নিচে,
+আমাদের দুটি হৃদয় একে অপরকে খুঁজে পেয়েছিল। ❤️🌙
+        </p>
+
+       
+
+        <p>
+            আর কোনো এক অজানা মুহূর্তে, তুমি হয়ে উঠলে আমার রাণী। 👑❤️
+            
+        </p>
+
+        <br>
+
+        <p>
+            মনে পড়ে সেদিন, হঠাৎই তুমি আমাকে বলেছিলে—  
+**“ভালোবাসি।”** ❤️
+        </p>
+        <p> এখান থেকেই শুরু হলো  
+আমাদের ভালোবাসার গল্প। ❤️✨
+        </p>
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     TIME TOGETHER / LIVE COUNTER
+===================================================== -->
+
+<section class="counter-section">
+
+    <div class="section-label-bn" lang="bn">
+        যেদিন থেকে শুরু আমাদের গল্প, সেদিন থেকেই প্রতিটি মুহূর্ত বিশেষ
+       
+    </div>
+    <br>
+ <p> </p>
+    <h2 class="section-title bengali love-font" lang="bn">
+        তোমার সাথে কাটানো প্রতিটি মুহূর্ত ⏱️
+    </h2>
+
+    <p class="counter-subtitle">
+        <span class="bengali" lang="bn">গুনে গুনে উপভোগ করছি, আমার রাণী </span> ❤️
+    </p>
+
+    <div class="love-counter-wrapper">
+
+        <div class="counter-card">
+            <div class="counter-num" id="counterDays">00</div>
+            <div class="counter-label">Days</div>
+        </div>
+
+        <div class="counter-sep">❤️</div>
+
+        <div class="counter-card">
+            <div class="counter-num" id="counterHours">00</div>
+            <div class="counter-label">Hours</div>
+        </div>
+
+        <div class="counter-sep">❤️</div>
+
+        <div class="counter-card">
+            <div class="counter-num" id="counterMinutes">00</div>
+            <div class="counter-label">Minutes</div>
+        </div>
+
+        <div class="counter-sep">❤️</div>
+
+        <div class="counter-card">
+            <div class="counter-num" id="counterSeconds">00</div>
+            <div class="counter-label">Seconds</div>
+        </div>
+
+    </div>
+
+    <p class="counter-footer">
+        "তোমাকে ভালোবেসে কাটানো প্রতিটি মুহূর্তই আমার দিনের সবচেয়ে সুন্দর সময়।" ♾️
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     MEMORIES
+===================================================== -->
+
+<section class="memories">
+
+    <div class="section-label">
+        আমাদের ছোট্ট ছোট্ট স্মৃতিগুলো ❤️
+    </div>
+<br>
+    <h2 class="section-title">
+        আমাদের ভালোবাসার স্মৃতির পাতায়
+    </h2>
+
+    <p class="memory-intro">
+        প্রতিটি ছবিই মনে করিয়ে দেয় আমাদের একসাথে কাটানো সুন্দর মুহূর্তগুলো। ❤️
+    </p>
+
+
+    <div class="slider">
+
+        <div class="slides" id="slides">
+
+
+            <!-- PHOTO 1 -->
+
+            <div
+                class="slide"
+                data-audio-src="./Audio/Rag koro na Sona.mp3"
+                data-duration="8">
+
+                <div class="single-photo">
+
+                    <img
+                        src="./photo1.jpg"
+                        alt="Our favorite memory 1"
+                        onerror="showPhotoError(this)">
+
+                    <div class="photo-error">
+                        ❤️<br><br>
+                        This photo could not be loaded.
+                    </div>
+
+                    <div class="memory-caption">
+                        A little moment with you ❤️
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PHOTO 2 -->
+
+            <div
+                class="slide"
+                data-audio-src="./Audio/oye sun sun.mp3"
+                data-duration="12">
+
+                <div class="single-photo">
+
+                    <img
+                        src="./photo2.jpg"
+                        alt="Our favorite memory 2"
+                        onerror="showPhotoError(this)">
+
+                    <div class="photo-error">
+                        ❤️<br><br>
+                        This photo could not be loaded.
+                    </div>
+
+                    <div class="memory-caption">
+                        One of my favorite memories 🥹
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PHOTO 3 -->
+
+            <div
+                class="slide"
+                data-audio-src="./Audio/Itni Kyu Tum Khubsurat Ho.mp3"
+                data-duration="15">
+
+                <div class="single-photo">
+
+                    <img
+                        src="./photo3.jpg"
+                        alt="Our favorite memory 3"
+                        onerror="showPhotoError(this)">
+
+                    <div class="photo-error">
+                        ❤️<br><br>
+                        This photo could not be loaded.
+                    </div>
+
+                    <div class="memory-caption">
+                        Just you and me ❤️
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PHOTO 4 -->
+
+            <div
+                class="slide"
+                data-audio-src="./Audio/Humse Ye Jo Bhi Harkat Hui Hai.mp3"
+                data-duration="20">
+
+                <div class="single-photo">
+
+                    <img
+                        src="./photo4.jpg"
+                        alt="Our favorite memory 4"
+                        onerror="showPhotoError(this)">
+
+                    <div class="photo-error">
+                        ❤️<br><br>
+                        This photo could not be loaded.
+                    </div>
+
+                    <div class="memory-caption">
+                        More memories to come ♾️
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <button
+            class="slider-button prev"
+            onclick="previousSlide()"
+            aria-label="Previous photo">
+
+            ‹
+
+        </button>
+
+
+        <button
+            class="slider-button next"
+            onclick="nextSlide()"
+            aria-label="Next photo">
+
+            ›
+
+        </button>
+
+    </div>
+
+
+    <div
+        class="dots"
+        id="dots">
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     LOVE NOTES JAR
+===================================================== -->
+
+<section class="jar-section">
+
+    <div class="section-label">
+        তোমার জন্য জমিয়ে রাখা মিষ্টি মিষ্টি কিছু কথা
+    </div>
+<br>
+    <h2 class="section-title">
+        “তোমাকে ভালোবাসার কারণগুলো”
+    </h2>
+
+    <p class="jar-subtitle bengali" lang="bn">
+        Moon, যখনই তোমার জানতে ইচ্ছে হবে তুমি আমার কাছে কতটা প্রিয়,
+তখনই এসে এই জারটা খুলে দেখো</p>
+
+    <p class="jar-subtitle bengali" lang="bn">
+প্রতিটি চিরকুটে লুকিয়ে আছে তোমার জন্য আমার ভালোবাসার একেকটা কারণ। ❤️
+    </p>
+
+    <div class="jar-container" onclick="openLoveNote(event)" role="button" tabindex="0" aria-label="Open a love note">
+
+        <div class="jar-body">
+
+            <div class="jar-lid">
+                <div class="jar-cork"></div>
+                <div class="jar-rim"></div>
+            </div>
+
+            <div class="jar-glass">
+                <div class="jar-glare"></div>
+
+                <div class="jar-hearts-inside">
+                    <span class="jar-floating-item" style="--delay: 0s;">💌</span>
+                    <span class="jar-floating-item" style="--delay: 0.8s;">💖</span>
+                    <span class="jar-floating-item" style="--delay: 1.6s;">📜</span>
+                    <span class="jar-floating-item" style="--delay: 2.4s;">💕</span>
+                    <span class="jar-floating-item" style="--delay: 3.2s;">✨</span>
+                    <span class="jar-floating-item" style="--delay: 4.0s;">🌸</span>
+                </div>
+
+                <div class="jar-label-tag">
+                    Tuntuni-র জন্য
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+        <button class="jar-btn" type="button">
+            ✨ জারটায় টাচ করে খুলে দেখো ✨
+        </button>
+
+        <div class="jar-counter-badge" id="jarCounterBadge">
+            তোমাকে ভালোবাসার অনেক কারণের মধ্যে, কয়েকটি তোমার জন্য
+        </div>
+
+    </div>
+
+    <!-- LOVE NOTE MODAL -->
+    <div class="note-modal" id="noteModal" onclick="closeNoteModalOutside(event)">
+
+        <div class="note-paper" id="notePaper">
+
+            <div class="note-stamp">
+                ❤️ ও Tuntuni, তোমার জন্য👑
+            </div>
+
+            <div class="note-number" id="noteNumber">
+                কারণ # ১ ❤️
+            </div>
+
+            <div class="note-content" id="noteContent">
+                "You are the most beautiful part of my everyday life."
+            </div>
+
+            <div class="note-actions">
+
+                <button class="note-btn-another" type="button" onclick="openLoveNote(event)">
+                    আরেকটি চিরকুট তুলে নাও 💌
+                </button>
+
+                <button class="note-btn-close" type="button" onclick="closeNoteModal(event)">
+                    তোমার হৃদয়ে রেখে দাও 🌸
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     LOVE LETTER
+===================================================== -->
+
+<section class="letter-section">
+
+    <div class="section-label">
+        
+    </div>
+
+    <h2 class="section-title">
+        তোমার জন্য, আমার মনের কথাগুলো
+    </h2>
+
+
+    <div class="letter">
+
+        <h3>
+            আমার রাণী, শুধু তোমার জন্য ❤️
+        </h3>
+
+        <p class="letter-opening">
+            আমার টুনটুনি 🐦,
+        </p>
+
+        <p>
+            আমি জানি না, কথাগুলো কখনো যথেষ্ট হবে কি না 
+            তোমাকে বোঝানোর জন্য যে তুমি আমার কাছে কতটা গুরুত্বপূর্ণ।
+            তবুও চেষ্টা করতে চাই।
+        </p>
+
+        <p>
+            Moon, এক লাইনে যদি তোমাকে বলতে হয়—তুমি আমার পৃথিবী।
+             তুমি আমার সব, মানে সত্যিই সব।
+        </p>
+
+        <p>
+            হ্যাঁ, তুমি মনে করো আমি নাটক করি। কিন্তু কী করে যে বোঝাই, আমি নাটক করি না—আমি সত্যিই তোমার নেশায় আসক্ত। অনেক বেশি ভালোবাসি তোমাকে। ❤️
+        </p>
+
+        <p>
+            আর ভালোবাসায় একটু-আধটু ঝগড়া, রাগ, মান-অভিমান থাকবেই—এটা আমি মানি। আমরা যখন প্রেম করছি, তখন ঝগড়াও তো হবেই। তবে এখন কিন্তু আমি তোমাকে অনেকটাই বুঝতে শিখেছি। যেমন, আগে তুমি রাগ করলে আমারও রাগ হতো, কিন্তু এখন আর রাগ করি না। ❤️
+        </p>
+
+        <p>
+            ওই, তুমি জানো আমি কেন প্রতিদিন তোমার কাছে ছবি চাই? কেন তোমাকে একটু ভিডিও কল করতে বলি? এমন নয় যে আমার কাছে তোমার ছবি নেই। আমার কাছে তোমার অনেক অনেক ছবি আছে। কিন্তু আমি ছবি চাই, কারণ আমি দেখতে চাই—আজকে তুমি কেমন আছো। হ্যাঁ, এটাই সত্যি। আমি তো মানুষ, ভগবান নই যে দূর থেকেই তোমার মনের ভাব বুঝে যাব। তাই তোমার একটা ছবি চাই, কিংবা ভিডিও কল করতে বলি—যাতে তোমার মুখটা দেখে অন্তত একটু বুঝতে পারি তুমি কেমন আছো, তোমার মনটা কেমন আছে। ❤️ আর হ্যাঁ, তোমাকে খুব বেশি মিস করলেও তোমার ছবি চাই।
+        </p>
+
+        <p>
+            আমার চোখের পাওয়ার কম, তাই চশমা পরি—এই কানা চোখ দুটোও খালি তোমাকেই খুঁজে বেড়ায়, জানো? 😂
+        </p>
+
+        <p>
+            একটা সত্যি কথা কী জানো? তুমি অনেক Mature, আমি তোমার মতো ততটা নই। হয়তো এই কারণেই আমরা এতদিন ধরে একসাথে আছি। দু’জনেই যদি পুরোপুরি Mature হতাম, তাহলে এতদিনে আমাদের দু’জনের ব্যবহারে কবে যে ছাড়াছাড়ি হয়ে যেত, কে জানে! 🥺 আচ্ছা শোনো, ঝগড়া-ঝামেলা যা-ই হোক না কেন, আমি তোমাকে ছেড়ে যেতে দেব না।
+        </p>
+
+        <p>
+           সবশেষে শুধু এটুকুই বলতে চাই—
+        </p>
+
+        <p>
+            অনেক বেশি ভালোবাসি তোমাকে, টুনটুনি।
+            ♾️❤️
+        </p>
+
+        <p class="signature">
+            তোমার বিট্টু ❤️
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PLAYLIST
+===================================================== -->
+
+<section class="playlist">
+
+    <div class="section-label-bn" lang="bn">
+        তোমার সাথে একটা হেডফোন দু’জন দু’কানে লাগিয়ে এই গানগুলো শুনতে চাই। ❤️🎧🥰
+    </div>
+
+    <h2 class="section-title">
+        Our Playlist 🎵
+    </h2>
+
+    <p class="playlist-intro">
+       এখানের প্রতিটি গানই আমাদের গল্প শোনায়। ❤️🎶✨
+    </p>
+
+
+    <div class="spotify">
+
+        <iframe
+            src="https://open.spotify.com/embed/playlist/1rej1WPT2gOvVr0xyEyoEw"
+            title="Our Spotify Playlist"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy">
+        </iframe>
+
+    </div>
+
+
+    <p class="playlist-note">
+        🎧 আমার রাণী Tuntuni র জন্য, বিট্টুর তরফ থেকে।
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     FINAL SURPRISE
+===================================================== -->
+
+<section class="final">
+
+    <div class="final-heart">
+        ❤️
+    </div>
+
+    <h2>
+        প্রতিবার, সবসময়—আমি তোমাকেই বেছে নেব।
+    </h2>
+
+    <div class="infinity">
+        ∞
+    </div>
+
+    <p class="final-message">
+
+        মুন, আমি তোমাকে সারাজীবন ভালোবেসে যেতে চাই। ❤️♾️
+
+        <br><br>
+
+        
+    <div class="final-signature">
+
+        তোমার ভালোবাসার মানুষ বিট্টু ❤️
+
+    </div>
+
+    <div class="final-date">
+        15.12.2026
+    </div>
+
+</section>
+
+
+<script>
+
+/* =====================================================
+   PHOTO ERROR
+===================================================== */
+
+function showPhotoError(image) {
+
+    image.style.display = "none";
+
+    const error =
+        image.parentElement.querySelector(".photo-error");
+
+    if (error) {
+        error.style.display = "block";
+    }
+}
+
+
+/* =====================================================
+   MUSIC
+===================================================== */
+
+const music =
+    document.getElementById("backgroundMusic");
+
+const photoMusic =
+    document.getElementById("photoMusic");
+
+const musicButton =
+    document.getElementById("musicButton");
+
+music.volume = 0.35;
+photoMusic.volume = 0.35;
+let musicEnabled = true;
+let unlocked = false;
+
+
+function startMusic() {
+    unlocked = true;
+    syncMusic();
+}
+
+
+function toggleMusic() {
+    musicEnabled = !musicEnabled;
+    syncMusic();
+}
+
+
+/* =====================================================
+   LOCK
+===================================================== */
+
+const secretCode = "15122019";
+
+
+function unlock(automatic = false) {
+
+    const input =
+        document.getElementById("code");
+
+    const error =
+        document.getElementById("error");
+
+
+    if (automatic || input.value.trim() === secretCode) {
+
+        clearInterval(countdownInterval);
+
+        document
+            .getElementById("lockScreen")
+            .classList.add("unlocked");
+
+        error.innerHTML = "";
+
+        startMusic();
+
+
+        for (
+            let i = 0;
+            i < 35;
+            i++
+        ) {
+
+            setTimeout(
+                createHeart,
+                i * 70
+            );
+
+        }
+
+    } else {
+
+        error.innerHTML =
+            "Try again, my love ❤️";
+
+        input.value = "";
+
+        input.focus();
+
+    }
+
+}
+
+/* AUTO UNLOCK ON DECEMBER 15, 2026 (LOCAL TIME) */
+const unlockAt = new Date(2026, 11, 15, 0, 0, 0).getTime();
+const countdownInterval = setInterval(updateUnlockCountdown, 1000);
+
+function updateUnlockCountdown() {
+    const remaining = unlockAt - Date.now();
+
+    if (remaining <= 0) {
+        clearInterval(countdownInterval);
+        unlock(true);
+        return;
+    }
+
+    const units = {
+        countdownDays: Math.floor(remaining / (1000 * 60 * 60 * 24)),
+        countdownHours: Math.floor((remaining / (1000 * 60 * 60)) % 24),
+        countdownMinutes: Math.floor((remaining / (1000 * 60)) % 60),
+        countdownSeconds: Math.floor((remaining / 1000) % 60)
+    };
+
+    Object.entries(units).forEach(([id, value]) => {
+        document.getElementById(id).textContent = String(value).padStart(2, "0");
+    });
+}
+
+updateUnlockCountdown();
+
+
+/* ENTER TO UNLOCK */
+
+const codeInput = document.getElementById("code");
+
+codeInput.addEventListener(
+    "keydown",
+    function(event) {
+
+        if (event.key === "Enter") {
+            unlock();
+        }
+
+    }
+);
+
+/* AUTO UNLOCK ON COMPLETE CODE */
+codeInput.addEventListener(
+    "input",
+    function() {
+
+        if (codeInput.value.trim() === secretCode) {
+            unlock();
+        }
+
+    }
+);
+
+
+/* =====================================================
+   SLIDER
+===================================================== */
+
+let currentSlide = 0;
+
+const slides =
+    document.getElementById("slides");
+
+const slideItems =
+    document.querySelectorAll(".slide");
+
+const totalSlides =
+    slideItems.length;
+
+const dots =
+    document.getElementById("dots");
+
+
+/* CREATE DOTS */
+
+for (
+    let i = 0;
+    i < totalSlides;
+    i++
+) {
+
+    const dot =
+        document.createElement("button");
+
+    dot.className = "dot";
+
+    dot.setAttribute(
+        "aria-label",
+        "Go to memory " + (i + 1)
+    );
+
+    dot.addEventListener(
+        "click",
+        function() {
+
+            currentSlide = i;
+
+            updateSlider();
+
+        }
+    );
+
+    dots.appendChild(dot);
+
+}
+
+
+/* UPDATE */
+
+function updateSlider() {
+
+    slides.style.transform =
+        "translateX(-" +
+        (currentSlide * 100) +
+        "%)";
+
+    updateSlideMusic();
+
+
+    document
+        .querySelectorAll(".dot")
+        .forEach(
+            (dot, index) => {
+
+                dot.classList.toggle(
+                    "active",
+                    index === currentSlide
+                );
+
+            }
+        );
+
+    scheduleNextSlide();
+
+}
+
+function updateSlideMusic() {
+    const slideMusic = slideItems[currentSlide].dataset.audioSrc;
+    const nextMusicUrl = new URL(slideMusic, document.baseURI).href;
+
+    if (photoMusic.src !== nextMusicUrl) {
+        photoMusic.src = slideMusic;
+        photoMusic.load();
+    }
+
+    syncMusic();
+}
+
+function syncMusic() {
+    const photoTrackActive = sliderInView;
+    const activeMusic = photoTrackActive ? photoMusic : music;
+    const inactiveMusic = photoTrackActive ? music : photoMusic;
+
+    inactiveMusic.pause();
+
+    if (unlocked && musicEnabled) {
+        if (activeMusic.paused) {
+            activeMusic.play()
+            .then(() => {
+                musicButton.textContent = "🎵";
+            })
+            .catch(() => {
+                musicButton.textContent = "🔇";
+            });
+        }
+    } else {
+        activeMusic.pause();
+        musicButton.textContent = "🔇";
+    }
+}
+
+let sliderInView = false;
+let slideTimer;
+
+function scheduleNextSlide() {
+    clearTimeout(slideTimer);
+    if (!sliderInView) {
+        return;
+    }
+
+    const duration = Number(slideItems[currentSlide].dataset.duration);
+    slideTimer = setTimeout(nextSlide, duration * 1000);
+}
+
+
+/* NEXT */
+
+function nextSlide() {
+
+    currentSlide++;
+
+    if (
+        currentSlide >= totalSlides
+    ) {
+        currentSlide = 0;
+    }
+
+    updateSlider();
+
+}
+
+
+/* PREVIOUS */
+
+function previousSlide() {
+
+    currentSlide--;
+
+    if (
+        currentSlide < 0
+    ) {
+        currentSlide = totalSlides - 1;
+    }
+
+    updateSlider();
+
+}
+
+
+updateSlider();
+
+const sliderObserver = new IntersectionObserver(
+    ([entry]) => {
+        sliderInView = entry.isIntersecting && entry.intersectionRatio >= 0.25;
+
+        if (!sliderInView) {
+            clearTimeout(slideTimer);
+        }
+
+        syncMusic();
+        if (sliderInView) {
+            scheduleNextSlide();
+        }
+    },
+    { threshold: [0, 0.25] }
+);
+
+sliderObserver.observe(document.querySelector(".slider"));
+
+
+/* =====================================================
+   SWIPE
+===================================================== */
+
+let touchStartX = 0;
+
+slides.addEventListener(
+    "touchstart",
+    function(event) {
+
+        touchStartX =
+            event.touches[0].clientX;
+
+    },
+    { passive: true }
+);
+
+
+slides.addEventListener(
+    "touchend",
+    function(event) {
+
+        const touchEndX =
+            event.changedTouches[0].clientX;
+
+        const distance =
+            touchStartX - touchEndX;
+
+
+        if (
+            Math.abs(distance) > 50
+        ) {
+
+            if (distance > 0) {
+                nextSlide();
+            } else {
+                previousSlide();
+            }
+
+        }
+
+    },
+    { passive: true }
+);
+
+
+/* =====================================================
+   FLOATING HEARTS
+===================================================== */
+
+function createHeart() {
+
+    const heart =
+        document.createElement("div");
+
+    heart.className = "heart";
+
+    const symbols = [
+        "❤️",
+        "💕",
+        "💗",
+        "💖",
+        "💓",
+        "💞",
+        "💘"
+    ];
+
+    heart.innerHTML =
+        symbols[
+            Math.floor(
+                Math.random() *
+                symbols.length
+            )
+        ];
+
+    heart.style.left =
+        Math.random() * 100 + "vw";
+
+    heart.style.fontSize =
+        12 +
+        Math.random() * 22 +
+        "px";
+
+    heart.style.animationDuration =
+        5 +
+        Math.random() * 6 +
+        "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(
+        () => heart.remove(),
+        12000
+    );
+
+}
+
+
+/* CONTINUOUS HEARTS */
+
+setInterval(
+    createHeart,
+    1200
+);
+
+
+/* INITIAL HEARTS */
+
+for (
+    let i = 0;
+    i < 8;
+    i++
+) {
+
+    setTimeout(
+        createHeart,
+        i * 500
+    );
+
+}
+
+/* =====================================================
+   LIVE COUNTER LOGIC
+===================================================== */
+
+const relationshipStart = new Date(2019, 11, 15);
+
+function updateLoveCounter() {
+    const now = new Date();
+    const diff = now.getTime() - relationshipStart.getTime();
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((diff / (1000 * 60)) % 60);
+    const seconds = Math.floor((diff / 1000) % 60);
+
+    const daysEl = document.getElementById("counterDays");
+    const hoursEl = document.getElementById("counterHours");
+    const minutesEl = document.getElementById("counterMinutes");
+    const secondsEl = document.getElementById("counterSeconds");
+
+    if (daysEl) daysEl.textContent = String(days).padStart(2, "0");
+    if (hoursEl) hoursEl.textContent = String(hours).padStart(2, "0");
+    if (minutesEl) minutesEl.textContent = String(minutes).padStart(2, "0");
+    if (secondsEl) secondsEl.textContent = String(seconds).padStart(2, "0");
+}
+
+setInterval(updateLoveCounter, 1000);
+updateLoveCounter();
+
+
+/* =====================================================
+   LOVE NOTES JAR LOGIC
+===================================================== */
+
+const loveNotes = [
+    "তোমার সেই হাসিটা, যা আমার সবচেয়ে খারাপ দিনটাকেও এক মুহূর্তে সুন্দর করে দেয়। ❤️",
+    "তোমার সাথে কথা বললেই আমার ভেতরটা কেমন যেন শান্ত আর নিরাপদ হয়ে যায়।",
+    "তোমার সেই সুন্দর চোখ দুটো, যেখানে এতটা মায়া লুকিয়ে আছে।",
+    "আমাদের তৈরি করা প্রতিটি স্মৃতি, আর সামনে অপেক্ষা করে থাকা হাজারো নতুন স্মৃতি।",
+    "তোমার ছোট্ট একটা মেসেজও আমার পুরো দিনটা বদলে দিতে পারে।",
+    "তোমার Voice শুনলেই আমার মনটা এক অদ্ভুত শান্তিতে ভরে যায়।",
+    "ঘুমঘুম চোখে কিংবা খুশিতে তোমার সেই মিষ্টি মুখটা।",
+    "তোমার সাথে নীরবতাও যেন কথার মতোই সুন্দর লাগে।",
+    "যাই হোক না কেন, তোমাকেই বেছে নেওয়া এমন একটি সিদ্ধান্ত, যা আমি প্রতিদিন নেব।",
+    "তোমার সাথে ভালোবাসা শুধু একটা অনুভূতি নয়—তুমিই আমার ভালোবাসার বাড়ি।",
+    "তোমাকে জড়িয়ে ধরার পর সেই অনুভূতিটা অনেকক্ষণ আমার মনে থেকে যায়। 😇",
+    "পৃথিবীর প্রতিটি ভালোবাসার গল্প সুন্দর, কিন্তু আমাদের গল্পটাই আমার সবচেয়ে প্রিয়।",
+    "তুমি আমার জীবনের সবচেয়ে সুন্দর Adventure, আবার আমার সবচেয়ে নিরাপদ আশ্রয়।",
+    "তোমার সাথে কাটানো প্রতিটি সেকেন্ডই আমার কাছে অমূল্য।",
+    "তুমি আজ, আগামীকাল এবং অনন্তকাল ধরে আমার Tuntuni। 👑❤️",
+    "তুমি যতই রাগ করে আমাকে বকো, যতই অভিমান করো—আমার ভালোবাসাটা তবুও তোমার জন্য একই রকম থাকবে",
+    "তুমি জানো, তুমি আমাকে গালি দিলেও আমার প্রেম পায়। ❤️",
+    "তুমি ম্যাচিউর, তাই তোমাকে ভালোবাসি।",
+    "তুমি আমার জন্য Dress বেছে দাও, আর সেটা সবারই ভালো লাগে।",
+    "যখন তোমার হাত ধরি, তখন মনে হয় পুরো পৃথিবীটাই আমার কাছে—অবশ্যই, তুমি-ই যে আমার পৃথিবী, এটাই সত্যি। ❤️🌍✨",
+    "How cute you are when you're sleepy or excited.",
+    "আমার ভালো লাগে তোমার ঠোঁটে চুমু খেতে। ❤️💋",
+    "আমার সবচেয়ে প্রিয় হলো, তোমার সাথে দেখা হলে তোমাকে 👉 করা। ❤️🥰",
+    "কিছুই না, শুধু তোমাকে দেখতে ভালো লাগে।",
+    "তুমি জানো, আমার প্রিয় গান সবসময়ই তোমার Voice। ❤️🎶",
+    "তোমার সবচেয়ে সুন্দর জিনিসটা কী জানো? তোমার চোখ। 👀 ❤️",
+    "তোমার সেই লম্বা চুলগুলো আমি অনেক ভালোবাসি, জানো?",
+    "আমি অনেক ভালোবাসি আমার বন্ধুদের মাঝে এটা বলতে যে, “Moon আমার বউ।” ❤️🥰👑",
+    "আমি তোমাকে Jayeta বলে ডাকার চেয়ে Baccha, Babu, Sona, Tuntuni, Moon, Asmita r Maa বলে ডাকতেই বেশি ভালোবাসি। ❤️🥰",
+    "তোমাকে আমি সবসময়ই কমবেশি Miss করি, আর জানো—তোমাকে Miss করতেও আমার ভালো লাগে। ❤️🥺",
+    "তোমাকে রাগাতেও আমার অনেক ভালো লাগে। ❤️🥰",
+    "আমার মতো একটা মানুষের সাথে এতগুলো বছর ধরে তুমি আছো—এর জন্যও তোমাকে ভালোবাসি। ❤️🥺",
+    "তোমার Mood যেমনই থাকুক—Happy হোক বা Sad, তুমি যখনই আমার সামনে আসো, তোমার সেই হাসিটা আমাকে একেবারে ফিদা করে দেয়। ❤️🥰✨",
+    "তুমি যখন হাসো, তোমার গাল দুটো রসগোল্লার মতো টুসটুসে হয়ে যায়—এই জিনিসটা আমি ভীষণ ভালোবাসি। ❤️🥰🍬",
+    "পাশে হাঁটার সময় তোমার হাত জড়িয়ে ধরে যে শান্তি পাই, সেটা বলে বোঝাতে পারব না। ❤️🥰",
+    "আমার কোনো কিছুর নেশা নেই, তোমাকে ছাড়া। আমি তোমার নেশায় আসক্ত। ❤️🥰",
+    "তুমি আমার জীবনের সবচেয়ে সুন্দর Surprise। তুমি আমার জীবনের সবচেয়ে সুন্দর Present। তুমি আমার জীবনের সবচেয়ে সুন্দর Future। আমার জীবনের সবচেয়ে সুন্দর Present হলো তুমি। আমার জীবনের সবচেয়ে সুন্দর Future হলো তুমি। আমার জীবনের সবচেয়ে সুন্দর Surprise হলো তুমি। ❤️🥰",
+    "তুমি ঘুমালে যে কী সুন্দর লাগে দেখতে তোমাকে, আমি দেখেছি, আমি জানি। ❤️🥰",
+];
+
+let remainingNotes = [...loveNotes];
+let openedNotesCount = 0;
+
+function openLoveNote(event) {
+    if (event) {
+        event.stopPropagation();
+    }
+
+    const jarContainer = document.querySelector(".jar-container");
+    if (jarContainer) {
+        jarContainer.classList.add("jar-shaking");
+        setTimeout(() => jarContainer.classList.remove("jar-shaking"), 600);
+    }
+
+    createJarHeartBurst();
+
+    if (remainingNotes.length === 0) {
+        remainingNotes = [...loveNotes];
+    }
+    const randomIndex = Math.floor(Math.random() * remainingNotes.length);
+    const chosenNote = remainingNotes.splice(randomIndex, 1)[0];
+    openedNotesCount++;
+
+    const noteModal = document.getElementById("noteModal");
+    const noteContent = document.getElementById("noteContent");
+    const noteNumber = document.getElementById("noteNumber");
+    const badge = document.getElementById("jarCounterBadge");
+
+    if (noteContent && noteNumber && noteModal) {
+        const noteIndex = loveNotes.indexOf(chosenNote) + 1;
+        const bengaliNumber = new Intl.NumberFormat("bn-BD");
+        noteNumber.textContent = "কারণ #" + bengaliNumber.format(noteIndex);
+        noteContent.textContent = '"' + chosenNote + '"';
+        noteModal.classList.add("active");
+    }
+
+    
+   
+}
+
+function closeNoteModal(event) {
+    if (event) {
+        event.stopPropagation();
+    }
+    const noteModal = document.getElementById("noteModal");
+    if (noteModal) {
+        noteModal.classList.remove("active");
+    }
+}
+
+function closeNoteModalOutside(event) {
+    if (event.target && event.target.id === "noteModal") {
+        closeNoteModal();
+    }
+}
+
+function createJarHeartBurst() {
+    const jar = document.querySelector(".jar-glass");
+    if (!jar) return;
+    const rect = jar.getBoundingClientRect();
+    const burstIcons = ["💖", "🥰", "💌", "🌸", "😘", "❤️"];
+
+    for (let i = 0; i < 8; i++) {
+        const heart = document.createElement("div");
+        heart.textContent = burstIcons[Math.floor(Math.random() * burstIcons.length)];
+        heart.style.position = "fixed";
+        heart.style.left = (rect.left + rect.width / 2) + "px";
+        heart.style.top = (rect.top + rect.height / 3) + "px";
+        heart.style.fontSize = (16 + Math.random() * 16) + "px";
+        heart.style.pointerEvents = "none";
+        heart.style.zIndex = "100001";
+        heart.style.transition = "all 0.9s cubic-bezier(0.25, 1, 0.5, 1)";
+        heart.style.opacity = "1";
+
+        document.body.appendChild(heart);
+
+        const angle = (Math.PI * 2 * i) / 8 + (Math.random() * 0.4 - 0.2);
+        const distance = 60 + Math.random() * 70;
+        const targetX = Math.cos(angle) * distance;
+        const targetY = Math.sin(angle) * distance - 30;
+
+        requestAnimationFrame(() => {
+            heart.style.transform = `translate(${targetX}px, ${targetY}px) scale(1.3)`;
+            heart.style.opacity = "0";
+        });
+
+        setTimeout(() => heart.remove(), 1000);
+    }
+}
+
+</script>
+
+</body>
+</html>
